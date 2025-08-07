@@ -1,0 +1,322 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Full-width input fields */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  } 
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  /* Center the image and position the close button */124:49 pm 8/06/2025
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: teal;
+   color: white;
+   text-align: center;
+}
+</style>
+
+<body>
+
+
+  <div class="w3-flex" style="gap:0px">
+    <div class="w3-bar w3-gray">
+      <div><img src="images\logo.png" alt="w" style="height:100%"></div>
+    </div>
+    <div class="w3-bar w3-gray">
+      <button class="w3-button us w3-Gray w3-round-large" style="width:100%" onclick= "document.location='contact us.html'">Contact us</button>
+    </div>
+    <div class="w3-bar w3-Gray">
+      <button class="w3-button w3-Gray w3-round-large" style="width:100%"
+        onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    </div>
+    <div class="w3-bar w3-Gray">
+      <button class="w3-button w3-Gray w3-round-large" style="width:100%" onclick="document.location='About us.html'">About us</button>
+      <h2>Mia’s</h2>
+    </div>
+    <div class="w3-bar w3-Gray">
+      <button class="w3-button w3-Gray w3-round-large" style="width:100%">Online shopping</button>
+    </div>
+  </div>
+
+
+
+  <div class="w3-teal w3-sidebar w3-bar-block w3-card" style="width:25%;right:0;">
+    <div class="w3-flex" style="gap:0px">
+      <div>
+        <label for="cars">Choose a shoes size:</label>
+        <select name="Shoe sizes" id="Shoe sizes">
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10</option>
+          <option value="10.5">10.5</option>
+          <option value="11">11</option>
+          <option value="11.5">11.5</option>
+          <option value="12">12</option>
+          <option value="12.5">12.5</option>
+          <option value="13">13</option>
+          <option value="13.5">13.5</option>
+          <option value="14">14</option>
+          <option value="14.5">14.5</option>
+          <option value="15">15</option>
+          <option value="15.5">15.5</option>
+          <option value="16">16</option>
+          <option value="16.5">16.5</option>
+          <option value="17">17</option>
+          <option value="17.5">17.5</option>
+          <option value="18">18</option>
+          <option value="18.5">18.5</option>
+          <option value="19">19</option>
+          <option value="19.5">19.5</option>
+          <option value="20">20</option>
+          <option value="20.5">20.5</option>
+          <option value="21">21</option>
+
+        </select>
+        <button class="w3-button w3-light-grey w3-round-large" style="width:100%">Mens shoos image</button>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">crocks </button>
+        <div><img src="images/sandlesmen.png" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Sneakers </button>
+        <div><img src="images/Sneakers" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Jandles </button>
+        <div><img src="img_lights.jpg" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Boots </button>
+        <div><img src="img_lights.jpg" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">dress Shoes </button>
+        <div><img src="img_lights.jpg" alt="Lights" style="width:200"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-teal w3-sidebar w3-bar-block w3-card" style="width:25%;Left:0;">
+    <div class="w3-flex" style="gap:0px">
+      <div>
+        <label for="cars">Choose a shoes size:</label>
+        <select name="Shoe sizes" id="Shoe sizes">
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10</option>
+          <option value="10.5">10.5</option>
+          <option value="11">11</option>
+          <option value="11.5">11.5</option>
+          <option value="12">12</option>
+        </select>
+        <button class="w3-button w3-light-grey w3-round-large" style="width:100%">Womens shoes image</button>
+
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">crocks </button>
+        <div><img src="images\Crockes.png" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Sneakers </button>
+        <div><img src="images\sneakers women.png" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Jandles </button>
+        <div><img src="images\Sandles.png" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Boots </button>
+        <div><img src="images\boots.png" alt="Lights" style="width:200"></div>
+        <button class="w3-button us w3-Gray w3-round-large" style="width:85%">Heals </button>
+        <div><img src="images\healls.png" alt="Lights" style="width:200"></div>
+      </div>
+
+      <!-- Login screen start code -->
+      <div id="id01" class="modal">
+
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <!-- End of Login screen code -->
+    </div>
+
+
+  </div>
+<div class="footer">
+  <p>Footer</p>
+  <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+</div>
+
+</body>
+
+</html>
+
+
+</html>
