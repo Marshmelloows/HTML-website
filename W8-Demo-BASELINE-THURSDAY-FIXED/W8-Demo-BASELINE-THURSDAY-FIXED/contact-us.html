@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Us</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776; <span>MY BEAUTIFUL WEBSITE</span> </p>
+        </div>       
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="contact-us.html">CONTACT US</a>
+            <a href="#">WEBPAGE 2</a>
+            <a href="#">WEBPAGE 3</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+	
+    <!--Header Section--> 
+    <header>
+        <!--Background Image-->
+        <div class="bg-image"></div>
+        <!--Text on background Image-->
+        <div class="bg-text">
+            <h1 style="font-size: 2.0em">I am Daniel DANG</h1>
+            <p>And I'm a Website Developer</p>
+        </div>
+    </header>
+    
+    <!--Main Section--> 
+    <main>
+
+		<div>
+			<h3>view our awsome team video:</h3>
+			<video id="our-team-video" controls width ="420">
+				<source src="Video/mov_bbb.mp4">
+			</video>
+			<br><br>
+			<button onclick="makeBigger()">BIGGER</button>
+			<button onclick="makeSmaller()">SMALLER</button>
+			<button onclick="makeNormal()">NORMAL</button>
+		</div>
+		<script>
+			//when user click "bigger" buton make vidio width set to 560
+			//when user click SMALLER buttion make cidio set to 320
+			//when user clicks NORMAL buttion mavke vidio witdth set to 420
+			function makeBigger(){
+				document.getElementById("our-team-video").width = 560
+			}
+			function makeSmaller(){
+				document.getElementById("our-team-video").width = 320
+			}
+			function makeNormal(){
+				document.getElementById("our-team-video").width = 420
+			}
+		</script>
+
+
+		<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ad87SqVYizA"></iframe>
+		</div>
+		<div>
+			<audio controls>
+				<source src="https://www.youtube.com/watch?v=Ad87SqVYizA&list=PPSV">
+				Your browser cant suport this b
+			</audio>
+		</div>
+	
+		<div>
+			<h1>FIND US AT: EIT, 501 Gloucester St, Taradale, Napier. <h1>
+			<div style="text-align: center;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.5718835299713!2d176.8348112759682!3d-39.546710871592616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69b41600f98c3f%3A0xb76385bc57ba6049!2s501%20Gloucester%20Street%2C%20Taradale%2C%20Napier%204112!5e0!3m2!1sen!2snz!4v1756341123034!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	
+		<div class="container">
+		  <hr>
+		  <h1>SEND US A MESSAGE: </h1>
+		  <form class="contact-form">
+			  <div class="row">
+				<div class="col-25">
+				  <label for="fname">First Name</label>
+				</div>
+				<div class="col-75">
+				  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				</div>
+			  </div>
+			  
+			  <div class="row">
+				<div class="col-25">
+				  <label for="lname">Last Name</label>
+				</div>
+				<div class="col-75">
+				  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				</div>
+			  </div>
+
+			  <div class="row">
+				<div class="col-25">
+				  <label for="email">Email</label>
+				</div>
+				<div class="col-75">
+				  <input type="email" id="email" name="email" placeholder="Your email..">
+				</div>
+			  </div>
+			  
+			  <div class="row">
+				<div class="col-25">
+				  <label for="country">City</label>
+				</div>
+				<div class="col-75">
+				  <select id="city" name="city">
+					<option value="auckland">Auckland</option>
+					<option value="gisborne">Gisborne</option>
+					<option value="napier">Napier</option>
+				  </select>
+				</div>
+			  </div>
+			  
+			  <div class="row">
+				<div class="col-25">
+				  <label for="subject">Message</label>
+				</div>
+				<div class="col-75">
+				  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				</div>
+			  </div>
+			  
+			  <br>
+			  <div class="row">
+				<input type="submit" value="Submit">
+			  </div>
+		  </form>
+		</div>		
+	
+    </main>
+
+    <!--Footer Section--> 
+    <footer class="vertical-center"> 
+        <p>ITWD5.130 Website Development<br> Created by Daniel Dang</p>       
+    </footer>
+
+</body>
+</html>
