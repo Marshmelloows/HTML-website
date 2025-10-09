@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776; <span>MY BEAUTIFUL WEBSITE</span> </p>
+        </div>       
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="contact-us.html">CONTACT US</a>
+            <a href="#">WEBPAGE 2</a>
+            <a href="#">WEBPAGE 3</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+	
+    <!--Header Section--> 
+    <header>
+        <!--Background Image-->
+        <div class="bg-image"></div>
+        <!--Text on background Image-->
+        <div class="bg-text">
+            <h1 style="font-size: 2em">I am Daniel DANG</h1>
+            <p>And I'm a Website Developer</p>
+        </div>
+    </header>
+    
+    <!--Main Section--> 
+    <main>
+
+
+        <!---aDD IN SHOPPING CART-->
+        <div class="shopping-cart-container">
+            <h1>SHOPPING CART &#128722;</h1>
+            <div id="cartItemsContainer">
+                <h3 id="totalPrice"> Total Price: $0.00</h3>
+                <!--Shopping cart items will be displayed here-->
+                <div id="cartItemsList">
+                    <table id="cartTable">
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>>
+            
+
+
+        </div>
+        <div>
+		<br>
+            <label>Search:</label>
+            <input type="text" id="searchInput" onchange="displayFilteredItems()">
+        </div>
+
+        <div>
+			<br>
+            <h4>SORTED BY: </h4>
+            <button style="padding: 5px;" onclick="sortByPrice()">PRICE</button>
+            <button  style="padding: 5px;" onclick="sortByYear()">YEAR</button> 
+            <button  style="padding: 5px;" onclick="sortByTitle()">TITLE</button> 
+        </div>
+
+        <br>
+        <div class="category-dropdown-container">
+            <h2>SORTED CATEGORY: </h2> 
+            <select id="categoryDropDown" onchange="sortedByCategory()" >
+                <option value="0" selected >ALL</option>
+                <option value="1">TRAGEDY</option>
+                <option value="2">CRIME</option>
+                <option value="3">ACTION</option>
+                <option value="4">FANTASY</option>
+            </select>
+        </div>
+        
+        <div>
+			<br>
+            <h2>Display a list of items</h2>
+            <div id="itemList"></div>
+        </div>
+
+    </main>
+
+    <!--Footer Section--> 
+    <footer class="vertical-center"> 
+        <p>ITWD5.130 Website Development<br> Created by Daniel Dang</p>       
+    </footer>
+
+    <!--Insert javascript file at the bottom of the html file-->
+    <script src="javascript.js">
+	</script>   
+</body>
+</html>
