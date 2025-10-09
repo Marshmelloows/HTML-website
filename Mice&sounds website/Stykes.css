@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    min-height: 5vh;
+    background-color: rgb(141, 141, 141);
+    border: solid 2px rgb(255, 204, 36);
+}
+
+/*define*/
+header {
+    height: 25vh;
+    position: relative;
+    margin: 0;
+    background-color: #eda034;
+    border: solid 2px #eda034;
+}
+.bg-image{
+    height: 50%;
+    width: 10%;
+    background-image: url("Images/Mice&Sounds-Logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
+}
+
+/*define*/
+
+
+main {
+    background-color: #ffb300;
+    min-height: 60vh;
+}
+
+/*-------------------------*/
+footer {
+    min-height: 10vh;
+    background-color: rgb(172, 169, 152);
+    border: solid 2px #ffb300;
+}
+footer p {
+    font-size: 1.1em;/*Default font-size is 16px */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
